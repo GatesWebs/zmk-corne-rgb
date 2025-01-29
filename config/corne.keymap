@@ -86,15 +86,6 @@
         };
     };
 
-    macros {
-        screenshot: screenshot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp &kp &kp>;
-            label = "SCREENSHOT";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
