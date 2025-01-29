@@ -86,6 +86,15 @@
         };
     };
 
+    macros {
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp &kp &kp>;
+            label = "SCREENSHOT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -93,7 +102,7 @@
             bindings = <
 &mt ESCAPE TAB                          &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E             &mt NUMBER_4 R       &mt N5 T     &mt NUMBER_6 Y  &mt N7 U                       &mt N8 I                            &mt N9 O               &mt N0 P              &mt DEL BACKSPACE
 &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D                &hm LEFT_SHIFT F     &kp G        &kp H           &hm RSHIFT J                   &hm RCTRL K                         &hm RIGHT_ALT L        &hm RGUI SEMICOLON    &mt MINUS SQT
-&kp LSHFT                               &kp Z           &kp X           &kp C                      &kp V                &kp B        &kp N           &kp M                          &mt UP_ARROW COMMA                  &mt DOWN_ARROW PERIOD  &mt LEFT_ARROW SLASH  &mt RIGHT_SHIFT RIGHT
+&mt LSHFT LS(LC(LG(NUMBER_4)))          &kp Z           &kp X           &kp C                      &kp V                &kp B        &kp N           &kp M                          &mt UP_ARROW COMMA                  &mt DOWN_ARROW PERIOD  &mt LEFT_ARROW SLASH  &mt RIGHT_SHIFT RIGHT
                                                                         &mt LEFT_GUI LEFT_BRACKET  &lt 2 RIGHT_BRACKET  &lt 1 ENTER  &lt 3 SPACE     &mt LEFT_PARENTHESIS LEFT_ALT  &mt LEFT_CONTROL RIGHT_PARENTHESIS
             >;
         };
